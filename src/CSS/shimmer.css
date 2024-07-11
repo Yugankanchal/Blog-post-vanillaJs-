@@ -1,0 +1,86 @@
+.main-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80100vww;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+
+.shimmer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #4e4a4a;
+    /* margin-bottom: 10px; */
+    /* padding: 10px; */
+}
+
+.blog-item {
+    width: 30vw;
+    height: 45vh;
+    color: #111010;
+}
+
+.shimmer.button {
+    margin-top: 20px;
+    width: 16vh;
+    height: 2rem;
+    /* margin: 25px; */
+    color: #ffe1ff;
+
+}
+
+.shimmer.h3 {
+    width: 90%;
+    height: 10px;
+}
+
+.shimmer.id {
+    width: 18vw;
+    height: 5vh;
+    /* padding: 6px; */
+    margin-bottom: 24px;
+
+}
+
+.shimmer.img {
+    /* left: 10%; */
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    /* padding: 8px; */
+    margin-bottom: 20px;
+}
+
+.shimmer.p {
+    height: 66px;
+    /* padding: 5px;
+     */
+    /* margin: 5px; */
+    width: 95%;
+}
+
+.shimmer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    /* left: -100%; */
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, transparent 0%, #804a4a 50%, transparent 100%);
+    animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(50%);
+    }
+}

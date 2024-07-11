@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.google.com/specimen/Karla');
+
+body {
+    font-family: 'karla';
+    background-color: lightslategray;
+    padding: 0;
+    margin: 0;
+    line-height: 2.5;
+    font-size: 20px;
+}
+
+.listComponents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25vw;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: steelblue;
+    color: white;
+    font-size: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+li h2 {
+    color: skyblue;
+}
+
+li button {
+    background-color: wheat;
+    color: black;
+}
+
+.PostDetailsDiv {
+    padding: 20px;
+    background-color: black;
+    width: 85vw;
+    color: white;
+    border-radius: 2rem;
+    margin-left: auto;
+    margin-top: 3rem;
+    margin-right: auto;
+
+}
+
+.PostDetails img {
+    width: 15vw;
+}
+
+.PostDetails h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.authorName {
+    margin-top: 20px;
+    opacity: .7;
+}
+
+.Comments {
+    border-radius: 3rem;
+    padding: 10px;
+    border: 2px solid white;
+    font-size: 1.2rem;
+}
+
+img {
+    border-radius: 50%;
+}
+
