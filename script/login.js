@@ -30,7 +30,7 @@ export function showTost(msg) {
     toast.classList.add('toast');
     toast.innerHTML = msg;
     toastBox.appendChild(toast);
-    if (msg.includes('Invalid')) {
+    if (msg.includes('Incorrect')) {
         toast.classList.add('invalid');
     }
     setTimeout(() => {
